@@ -1,5 +1,8 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import MachadoImg from '@/assets/1753191794327.jpg'
+import FelisbertoImg from '@/assets/1753191840962.jpg'
+import JoaquimImg from '@/assets/1753271624231.jpg'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 interface Professional {
@@ -11,28 +14,28 @@ interface Professional {
 
 const professionals: Professional[] = [
   {
-    name: "Carlos Silva",
+    name: "António Machado",
     role: "Backend Developer | NestJS, PostgreSQL",
     description: "Especialista em arquitetura de APIs e microsserviços escaláveis.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: MachadoImg,
   },
   {
-    name: "Juliana Gomes",
-    role: "UI/UX Designer | Figma, Adobe XD",
-    description: "Cria interfaces intuitivas e centradas no usuário.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Felisberto Alberto",
+    role: "FullStack Developer | JAVA, NodeJS & ReactJS ",
+    description: "Cria projectos completos desde o frontend até o backend.",
+    image: FelisbertoImg
   },
   {
-    name: "André Fernando",
-    role: "Mobile Developer | React Native, Flutter",
-    description: "Apps performáticos com foco em experiência mobile.",
-    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    name: "Joaquim Claúdio",
+    role: " .Net  | c# , ReactJs",
+    description: "Cria Aplicações web fullstack na IZERTIS .",
+    image: JoaquimImg
   },
   {
-    name: "Tatiana Rocha",
-    role: "QA Engineer | Cypress, Playwright",
-    description: "Garantia de qualidade e automação de testes ponta-a-ponta.",
-    image: "https://randomuser.me/api/portraits/women/55.jpg",
+    name: "Felix Sanjala",
+    role: "Frontend Developer | Next.Js , ReactJs, NodeJs",
+    description: "Cria interfaces elegantes e responsivas.",
+    image: "",
   },
 ]
 

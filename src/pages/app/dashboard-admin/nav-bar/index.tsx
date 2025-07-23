@@ -27,11 +27,13 @@ import { Download } from "lucide-react";
                   </ul>
                </div>
                <div>
-                  <Button variant="default" className="flex rounded-xl h-10">
-                     <Download/>
-                     Baixar Currículo
-                    
-                  </Button>
+   <a href="/CV_ATUAL.pdf" download>
+  <Button variant="default" className="flex items-center gap-2 rounded-xl h-10">
+    <Download />
+    Baixar Currículo
+  </Button>
+</a>
+
                </div>
              </div>
            </div>

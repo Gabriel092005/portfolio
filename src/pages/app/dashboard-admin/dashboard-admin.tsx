@@ -5,10 +5,11 @@ import imagePna_03 from "../../../assets/Captura de Ecrã (226).png";
 import image_04 from "../../../assets/Captura de Ecrã (236).png";
 import image_06 from "../../../assets/IMGGABRI.png";
 import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { ProjectCard } from "./projectcards";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { RecommendedProfessionals } from "./recomendations";
+import { NewsletterDownload } from "./newLessester";
+
 
 export function DashBoardAdmin() {
   return (
@@ -40,15 +41,13 @@ export function DashBoardAdmin() {
 
         {/* Botão de contato + estrelas */}
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-           <Button variant="default" className="flex rounded-xl h-10">
-                     <Download/>
-                     Baixar Currículo
-                  </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent />
-          </DropdownMenu>
+
+          <a href="/CV_ATUAL.pdf" download>
+  <Button variant="default" className="flex items-center gap-2 rounded-xl h-10">
+    <Download />
+    Baixar Currículo
+  </Button>
+</a>
 
           <div className="flex items-center gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
@@ -64,21 +63,25 @@ export function DashBoardAdmin() {
 
       <section className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
   <ProjectCard
+  link=""
     title="Sistema de Gestão de Diabéticos Hipertensos"
     description="Usado na Polícia Nacional de Angola"
     image={imagePna_03}
   />
   <ProjectCard
+    link=""
     title="LUGE"
     description="Sistema de Gestão de Energia Elétrica"
     image={image_Luge}
   />
   <ProjectCard
+    link="f"
     title="Quintal"
     description="Rede Social de Proximidade"
     image={image_02}
   />
   <ProjectCard
+    link="https://github.com/Gabriel092005/souangolano"
     title="Sou Angola - Web"
     description="Protótipo do jogo cultural angolano"
     image={image_04}
@@ -86,6 +89,9 @@ export function DashBoardAdmin() {
 </section>
 <section>
   <RecommendedProfessionals/>
+</section>
+<section>
+  <NewsletterDownload/>
 </section>
 
 

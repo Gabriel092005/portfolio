@@ -1,12 +1,15 @@
 import { motion } from "framer-motion"
 import { Eye } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export function ProjectCard({
   title,
   description,
+  link,
   image,
 }: {
   title: string
+  link:string
   description: string
   image: string
 }) {
@@ -33,6 +36,7 @@ export function ProjectCard({
         >
           <Eye className="w-4 h-4" />
           Ver Projeto
+          <Link to={link}></Link>
         </motion.button>
       </div>
 
