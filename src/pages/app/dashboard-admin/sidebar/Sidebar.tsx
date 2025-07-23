@@ -1,4 +1,5 @@
 
+import { ModeToggle } from "@/components/theme/theme-toggle";
 import { NavItem } from "../main-navigation/NavItem";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -20,8 +21,12 @@ export function SideBar() {
         </Sheet>
 
         {/* Exemplo de título opcional */}
+        <div className="flex items-center gap-56 justify-between">
+                      <span className="text-sm font-semibold text-zinc-800 dark:text-white"></span>
+        <ModeToggle/>
+        </div>
     
-        <span className="text-sm font-semibold text-zinc-800 dark:text-white">Painel</span>
+
       </div>
     </>
   );

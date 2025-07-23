@@ -1,7 +1,6 @@
 
-import { Bell, Home, MessageSquare,Settings, Power} from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { Sair } from "./Sair";
 
 
@@ -25,8 +24,7 @@ export function NavItem() {
             }
           `}
         >
-          <Home className="h-5 w-5" />
-          <span className="text-left font-bold">HOME</span>
+          <span className="text-left font-bold">Início</span>
         </Link>
 
         {/* Repita esses Links para as outras rotas, sempre com justify-start */}
@@ -42,8 +40,7 @@ export function NavItem() {
             }
           `}
         >
-          <MessageSquare className="h-5 w-5" />
-          <span className="text-left font-bold">MENSAGENS</span>
+          <span className="text-left font-bold">Especialidades</span>
         </Link>
 
      
@@ -55,37 +52,15 @@ export function NavItem() {
         
           `}
         >
-          <Bell className="h-5 w-5 text-zinc-700" />
-          <Dialog>
-             <DialogTrigger disabled>
-                   <span className="text-left font-bold text-zinc-700  ">NOTIFICAÇÕES</span>
-             </DialogTrigger>
-             <DialogContent>
-       <h1 className="tracking-tight text-xl font-bold">Notificações</h1>
+   
+      
+                   <span className="text-left font-bold text-zinc-700  ">Projectos</span>
+          
+       <h1 className="tracking-tight text-xl font-bold"></h1>
 
 
-
-             </DialogContent>
-          </Dialog>
         </Link>
-     
-
-               {/* <Link
-               
-          to="/dash"
-          className={`
-            flex items-center justify-start gap-3 w-full
-            p-2 text-xs transition-colors duration-200
-            ${
-              isActive('/dash')
-                ? 'bg-[#F2F4F7] dark:bg-black text-blue-700 dark:text-white font-bold rounded'
-                : 'text-gray-700 hover:text-blue-700'
-            }
-          `}
-        >
-          <BarChart className="h-5 w-5" />
-          <span className="text-left font-bold">DASHBOARD</span>
-        </Link> */}
+    
 
                <Link
           to="/home"
@@ -99,8 +74,7 @@ export function NavItem() {
             }
           `}
         >
-          <Settings  className="h-5 w-5" />
-          <span className="text-left font-bold">DEFINIÇÕES</span>
+          <span className="text-left font-bold">Acerca</span>
         </Link>
 
 
@@ -117,8 +91,6 @@ export function NavItem() {
               p-2 text-xs text-gray-700 hover:text-red-700
             "
           >
-            <Power className="h-5 w-5" />
-            <span className="text-left font-bold">SAIR</span>
           </Link>
         </DialogTrigger>
 
