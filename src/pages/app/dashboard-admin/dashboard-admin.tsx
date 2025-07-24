@@ -1,4 +1,4 @@
-import {  Download, Send, Star } from "lucide-react";
+import {  Award, Download, Send, Star } from "lucide-react";
 import image_Luge from "../../../assets/Captura de Ecrã (184).png";
 import image_02 from "../../../assets/Captura de Ecrã (193).png";
 import imagePna_03 from "../../../assets/Captura de Ecrã (226).png";
@@ -16,7 +16,7 @@ import { Contact } from "./Contact";
 
 export function DashBoardAdmin() {
   return (
-<div className="flex flex-col min-h-screen px-6  dark:bg-zinc-800 lg:px-32 pt-24 mt-0 dark:bg-zinc-95 0">
+<div className="flex flex-col min-h-screen px-6   lg:px-32 pt-24 mt-0 dark:bg-zinc-95 0">
         <div className="flex items-center justify-center gap-6 flex-col ">
                   <div className="flex items-center flex-col justify-center">
                 {/* <p className="uppercase font-bold underline text-xs">Web Developer</p> */}
@@ -86,7 +86,9 @@ export function DashBoardAdmin() {
      className="   mt-0 max-w-[55rem] "
     >
                 <div className="flex justify-center items text-orange-600 ">
-                 <span className="border rounded-xl p-1 border-orange-500">   Experiência Profissional</span>
+                 <span className="border rounded-xl p-1 border-orange-500 flex"> 
+                  <Award/>
+                    Experiência Profissional</span>
                 </div>
                 <div className="">
                   <Separator orientation="horizontal"  className="bg-orange-500 mt-4 "/>
