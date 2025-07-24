@@ -1,4 +1,4 @@
-import { Building2, Download, Send, Star } from "lucide-react";
+import {  Download, Send, Star } from "lucide-react";
 import image_Luge from "../../../assets/Captura de Ecrã (184).png";
 import image_02 from "../../../assets/Captura de Ecrã (193).png";
 import imagePna_03 from "../../../assets/Captura de Ecrã (226).png";
@@ -196,9 +196,7 @@ export function DashBoardAdmin() {
 
   <NewsletterDownload/>
       {/* Projetos */}
-      <footer>
-          @copywrite 2025
-      </footer>
+    
     
     </div>
   );

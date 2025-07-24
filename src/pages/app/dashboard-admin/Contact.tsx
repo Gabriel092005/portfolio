@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { GitBranch, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
 
 export function Contact(){
