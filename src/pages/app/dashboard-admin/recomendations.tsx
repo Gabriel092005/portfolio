@@ -57,9 +57,9 @@ export function RecommendedProfessionals() {
             viewport={{ once: true }}
             className="p-4 bg-white dark:bg-zinc-900 rounded-xl shadow hover:shadow-lg transition"
           >
-            <div className="flex flex-col items-center text-center gap-3">
+            <div className="flex flex-col items-center text-center gap-3   object-cover transition-transfo">
               <Avatar className="w-16 h-16">
-                <AvatarImage src={pro.image} alt={pro.name} />
+                <AvatarImage src={pro.image} alt={pro.name}   className=" group-hover:scale-105  absolute  object-cover transition-transfo" />
                 <AvatarFallback>{pro.name[0]}</AvatarFallback>
               </Avatar>
 
@@ -70,7 +70,7 @@ export function RecommendedProfessionals() {
 
               <p className="text-xs text-muted-foreground mt-2">{pro.description}</p>
 
-              <Button variant="outline" size="sm" className="mt-2 text-xs">
+              <Button  size="sm" className="mt-2 text-xs bg-orange-500  hover:bg-orange-600 dark:text-white-900">
                 Ver Perfil
               </Button>
             </div>

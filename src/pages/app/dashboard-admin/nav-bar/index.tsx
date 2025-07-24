@@ -28,9 +28,9 @@ import { Download } from "lucide-react";
                </div>
                <div>
    <a href="/CV_ATUAL.pdf" download>
-  <Button variant="default" className="flex items-center gap-2 rounded-xl h-10">
-    <Download />
-    Baixar Currículo
+  <Button variant="ghost" className="flex items-center gap-2 hover:bg-orange-600 rounded-xl bg-orange-500 h-10">
+    <Download className="text-white" />
+     <span className="text-white">Baixar Currículo</span>
   </Button>
 </a>
 

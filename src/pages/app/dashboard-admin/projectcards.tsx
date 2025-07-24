@@ -32,7 +32,7 @@ export function ProjectCard({
         <p className="text-xs text-muted-foreground">{description}</p>
         <motion.button
           whileTap={{ scale: 0.95 }}
-          className="mt-2 inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-md text-xs transition"
+          className="mt-2 inline-flex items-center justify-center bg-orange-500 gap-2  hover:bg-orange-500 text-white px-4 py-1.5 rounded-md text-xs transition"
         >
           <Eye className="w-4 h-4" />
           Ver Projeto

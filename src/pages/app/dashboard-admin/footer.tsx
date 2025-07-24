@@ -22,7 +22,7 @@ export function NewsletterDownload() {
   }
 
   return (
-    <div className=" mt-10 p-6 rounded-2xl shadow-lg bg-white dark:bg-zinc-900 flex-1 text-zinc-800 dark:text-zinc-100 space-y-6 transition-all duration-300">
+    <div className="max-w-md mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 space-y-6 transition-all duration-300">
       <div>
         <h2 className="text-2xl font-semibold mb-1">Inscreva-se na Newsletter</h2>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
@@ -30,15 +30,15 @@ export function NewsletterDownload() {
         </p>
       </div>
 
-                 <Input
+   
+      <div className="flex flex-col sm:flex-row gap-3">
+        <Input
           type="email"
           placeholder="Digite seu e-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-1 text-sm dark:bg-zinc-950 dark:border-none outline-none focus:accent-violet-400"
+          className="flex-1 text-sm"
         />
-      <div className="flex flex-col sm:flex-row gap-10">
-
         <Button onClick={handleSubscribe} variant="default"
                   className="w-full flex items-center bg-orange-500 justify-center gap-2 rounded-xl h-10 transition-all hover:bg-orange-600 dark:hover:bg-orange-500"
 
@@ -66,8 +66,6 @@ export function NewsletterDownload() {
           Baixar Currículo
         </Button>
       </a>
-
-      
     </div>
   )
 }
