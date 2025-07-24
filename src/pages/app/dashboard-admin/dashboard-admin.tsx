@@ -16,7 +16,7 @@ import { Contact } from "./Contact";
 
 export function DashBoardAdmin() {
   return (
-<div className="flex flex-col min-h-screen px-6 lg:px-32 pt-24 mt-0 dark:bg-zinc-95 0">
+<div className="flex flex-col min-h-screen px-6  dark:bg-zinc-800 lg:px-32 pt-24 mt-0 dark:bg-zinc-95 0">
         <div className="flex items-center justify-center gap-6 flex-col ">
                   <div className="flex items-center flex-col justify-center">
                 {/* <p className="uppercase font-bold underline text-xs">Web Developer</p> */}
@@ -44,7 +44,7 @@ export function DashBoardAdmin() {
              </Avatar>
             </div>
         </div>
-        <h1 className="text-3xl font-bold text-zinc-800 dark:text-white">Gabriel Cavala</h1>
+        <h1 className="text-3xl font-bold text-zinc-800 text-nowrap dark:text-white">Gabriel Cavala</h1>
         <h2 className="text-lg text-muted-foreground mt-1 mb-5">
           Frontend Developer | Next.js | HTML | CSS | JS | Node.js | NestJS | ReactJs   | React Native-Learner
         </h2>
